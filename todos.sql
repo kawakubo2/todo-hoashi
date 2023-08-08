@@ -20,3 +20,8 @@ create table todos(
     primary key(id),
     foreign key(user_id) references users(id)
 );
+
+insert into todos(user_id, title, content, expired, status)
+VALUES
+(1, 'キレイキレイ詰め替え(泡タイプ)', '泡タイプの4回詰め替えのものを購入すること', '2023-08-10', 'NOT_STARTED'),
+(1, '●●株式会社の請求書送付', '7月分研修分', '2023-08-15', 'STARTED');
